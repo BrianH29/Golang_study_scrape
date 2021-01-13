@@ -11,8 +11,8 @@ import (
 var baseURL string = "http://www.jobkorea.co.kr/Search/?stext=golang"
 
 func main() {
-	getPages()
-	//fmt.Println(totalPages)
+	totalPages := getPages()
+	fmt.Println(totalPages)
 }
 
 func getPages() int {
